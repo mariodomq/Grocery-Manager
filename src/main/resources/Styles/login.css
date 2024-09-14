@@ -1,0 +1,22 @@
+.login_container {
+
+
+}
+
+.anchor_pane {
+
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-insets: 5;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5),10,0.5,5,5);
+}
+
+.background_image_container {
+
+
+    -fx-background-image: url('../Images/Login.jpg');
+
+
+}
