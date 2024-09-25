@@ -1,22 +1,35 @@
-.login_container {
-
-
+.login-button {
+    -fx-background-color: #245e34; /* Dark green background for the button */
+    -fx-text-fill: white;          /* White text inside the button */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.5, 5, 5);
 }
 
-.anchor_pane {
-
-    -fx-border-color: black;
-    -fx-border-width: 2px;
-    -fx-border-style: solid;
-    -fx-border-insets: 5;
-
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5),10,0.5,5,5);
-}
-
-.background_image_container {
-
-
+.login-container {
     -fx-background-image: url('../Images/Login.jpg');
+}
 
+/* Hyperlink styling */
+.hyperlink {
+    -fx-underline: true;
+    -fx-text-fill: #245e34; /* Dark green */
+}
 
+.hyperlink:hover {
+    -fx-text-fill: #81b29a; /* Light green on hover */
+}
+
+.label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-text-fill: #81b29a; /* Light green for labels */
+}
+
+.label-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #245e34; /* Dark green for title */
 }
