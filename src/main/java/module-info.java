@@ -15,4 +15,5 @@ module com.md.gm {
     exports com.md.gm.Models;
     exports com.md.gm.Views;
     opens com.md.gm.Controllers to javafx.fxml;
+    opens com.md.gm.Controllers.Client to javafx.fxml;
 }
