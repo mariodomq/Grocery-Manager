@@ -24,7 +24,7 @@ public class LoginController {
 
     @FXML
     private Hyperlink joinNowLink;
-
+    private ClientController clientController = new ClientController();
     @FXML
     public void initialize() {
         // Log in button action
@@ -57,7 +57,6 @@ public class LoginController {
     }
 
     private void onJoinNow() {
-        private void onJoinNow() {
             String username = usernameField.getText();
             String password = passwordField.getText();
 
@@ -65,10 +64,9 @@ public class LoginController {
                 showAlert("Error", "Please enter both username and password.");
             } else {
                 // Call the createUser method from ClientController
-                String result = ClientController.createUser(username, password);
+                String result = clientController.createUser(username, password);
                 showAlert(result.contains("successfully") ? "Success" : "Error", result);
             }
-        }
     }
 
     private void showAlert(String title, String message) {
