@@ -6,6 +6,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Button;
+import com.md.gm.Controllers.Client.ClientController;
 
 public class LoginController {
 
@@ -56,8 +57,18 @@ public class LoginController {
     }
 
     private void onJoinNow() {
-        showAlert("Create Account", "Redirecting to account creation...");
-        // Implement account creation logic here
+        private void onJoinNow() {
+            String username = usernameField.getText();
+            String password = passwordField.getText();
+
+            if (username.isEmpty() || password.isEmpty()) {
+                showAlert("Error", "Please enter both username and password.");
+            } else {
+                // Call the createUser method from ClientController
+                String result = ClientController.createUser(username, password);
+                showAlert(result.contains("successfully") ? "Success" : "Error", result);
+            }
+        }
     }
 
     private void showAlert(String title, String message) {
