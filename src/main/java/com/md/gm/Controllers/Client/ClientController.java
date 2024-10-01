@@ -1,6 +1,5 @@
 package com.md.gm.Controllers.Client;
 
-import com.md.gm.*;
 import java.sql.*;
 
 public class ClientController {

@@ -24,7 +24,7 @@ public class LoginController {
 
     @FXML
     private Hyperlink joinNowLink;
-    private ClientController clientController = new ClientController();
+    private final ClientController clientController = new ClientController();
     @FXML
     public void initialize() {
         // Log in button action
