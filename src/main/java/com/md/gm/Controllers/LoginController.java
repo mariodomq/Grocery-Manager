@@ -7,6 +7,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Button;
 import com.md.gm.Controllers.Client.ClientController;
+import java.io.*;
 
 public class LoginController {
 
@@ -46,7 +47,10 @@ public class LoginController {
         } else if (username.equals("admin") && password.equals("admin")) {
             showAlert("Success", "Login successful!");
             // Proceed to the next screen
-        } else {
+        } else if(clientController.validateCredentials(username, password)){
+            showAlert("Success", "Login successful!");
+            // Proceed to the next screen
+        }else {
             showAlert("Error", "Invalid credentials. Please try again.");
         }
     }
