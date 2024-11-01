@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="your.package.SignUpController" stylesheets="@styles/SignUp.css">
+    <VBox alignment="CENTER" spacing="10">
+        <Label fx:id="title" text="Sign Up"/>
+        
+        <Label text="Please enter your Email" styleClass="label-text"/>
+        <TextField fx:id="emailField" styleClass="text-field"/>
+        
+        <Label text="Create Password" styleClass="label-text"/>
+        <PasswordField fx:id="passwordField" styleClass="text-field"/>
+        
+        <Button fx:id="signUpButton" text="SIGN UP" onAction="#handleSignUp"/>
+        
+        <Label text="Already have an account?" styleClass="label-text"/>
+        <Hyperlink fx:id="loginLink" text="Log in" onAction="#goToLogin"/>
+    </VBox>
+</AnchorPane>
