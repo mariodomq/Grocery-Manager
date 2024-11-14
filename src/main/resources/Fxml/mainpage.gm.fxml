@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.md.gm.Controllers.MainController">
+   <children>
+       <!-- Button opens menu panel -->
+      <Button fx:id="menuButton" graphicTextGap="6.0" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <graphic>
+             <ImageView fitHeight="20" fitWidth="20" preserveRatio="true">
+                 <Image url="@../Images/menuIcon.png" /> <!-- Path relative to resources folder -->
+             </ImageView>
+         </graphic></Button>
+
+       <!-- Separates between data table and search query / title -->
+      <Separator layoutX="32.0" layoutY="41.0" prefHeight="8.0" prefWidth="531.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="32.0" />
+
+       <!-- Logo (Grocery Store Bag) -->
+       <ImageView cache="true" fitHeight="28.0" fitWidth="36.0" layoutX="67.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+           <Image url="@../Images/shoppingBagLogo.jpg" />
+       </ImageView>
+
+       <!-- Title-->
+       <Label layoutX="106.0" layoutY="3.0" prefHeight="42.0" prefWidth="105.0" text="Grocery Store Manager" textAlignment="CENTER" textFill="#000000" wrapText="true">
+           <font>
+               <Font name="Arial" size="15.0" />
+           </font>
+       </Label>
+
+       <!-- Search query-->
+       <StackPane layoutX="227.0" layoutY="7.0" prefHeight="35.0" prefWidth="279.0">
+           <TextField fx:id="searchTextField" alignment="CENTER" layoutX="406.0" layoutY="5.0" prefHeight="25.0" prefWidth="253.0" promptText="Search" />
+               <ImageView cache="true" fitHeight="20.5" fitWidth="20.5" layoutX="100.0" layoutY="-50.0" pickOnBounds="true" preserveRatio="true" translateX="-125.0">
+                 <Image url="@../Images/searchIcon.png" />
+               </ImageView>
+       </StackPane>
+
+       <!-- Page title (Dashboard)-->
+       <Label layoutX="54.0" layoutY="45.0" prefHeight="21.0" prefWidth="105.0" text="Dashboard" textAlignment="CENTER" textFill="#000000" wrapText="true">
+           <font>
+               <Font name="Arial" size="15.0" />
+           </font>
+       </Label>
+
+
+       <!-- Data Table -->
+      <BorderPane layoutX="32.0" layoutY="67.0" prefHeight="306.0" prefWidth="532.0">
+         <center>
+             <TableView BorderPane.alignment="CENTER" >
+                <columns>
+                    <TableColumn prefWidth="76" minWidth="76" maxWidth="76" text="Status" />
+                    <TableColumn prefWidth="76" minWidth="76" maxWidth="76" text="SKU Number" />
+                    <TableColumn prefWidth="76" minWidth="76" maxWidth="76" text="Brand" />
+                    <TableColumn prefWidth="76" minWidth="76" maxWidth="76" text="Description" />
+                    <TableColumn prefWidth="76" minWidth="76" maxWidth="76" text="Cost" />
+                    <TableColumn prefWidth="76" minWidth="76" maxWidth="76" text="Supplier" />
+                    <TableColumn prefWidth="76" minWidth="76" maxWidth="76" text="Quantity" />
+                </columns>
+             </TableView>
+         </center>
+      </BorderPane>
+
+       <!-- Profile Icon-->
+       <Button fx:id="viewProfile" graphicTextGap="6.0" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: transparant" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="10.0">
+           <graphic>
+               <ImageView fitHeight="20" fitWidth="20" preserveRatio="true">
+                   <Image url="@../Images/profileIcon.jpg" /> <!-- Path relative to resources folder -->
+               </ImageView>
+           </graphic></Button>
+
+   </children>
+
+</AnchorPane>
