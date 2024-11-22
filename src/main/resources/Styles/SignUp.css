@@ -1,0 +1,45 @@
+
+
+.root {
+    -fx-background-image: url("/images/SignupBackground.jpg"); /* Use the correct path to the image */
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: center;
+}
+
+#title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: darkgreen;
+    -fx-padding: 20px 0 10px 0;
+}
+
+.label-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: darkgreen;
+}
+
+.text-field {
+    -fx-font-size: 16px;
+    -fx-pref-width: 300px;
+    -fx-border-color: darkgreen;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5px;
+}
+
+#signUpButton {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-background-color: darkgreen;
+    -fx-background-radius: 20;
+    -fx-pref-width: 300px;
+    -fx-padding: 10px;
+}
+
+#loginLink {
+    -fx-font-size: 12px;
+    -fx-text-fill: darkgreen;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
