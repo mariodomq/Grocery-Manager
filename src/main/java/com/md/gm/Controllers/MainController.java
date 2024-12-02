@@ -2,9 +2,14 @@ package com.md.gm.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuButton;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 
 import java.awt.*;
+
 
 public class MainController {
     @FXML
@@ -13,6 +18,12 @@ public class MainController {
     private TextField searchTextField;
     @FXML
     private Button viewProfile;
+    @FXML
+    private VBox sideMenu;
+    @FXML
+    private AnchorPane mainPage;
+
+
 
     @FXML
     public void initialize() {
@@ -31,6 +42,8 @@ public class MainController {
 
     private void openMenu() {
         //Opens side menu
+        sideMenu.setVisible(true);
+        mainPage.setVisible(false);
 
     }
 
